@@ -1,6 +1,6 @@
 import java.util.*;
 public class selection_sort {
-    static void array(int arr[], int n ){
+    void array(int arr[], int n ){
         
         for(int i=0; i<n; i++){
             for(int j=i; j<n; j++){
@@ -25,6 +25,7 @@ public class selection_sort {
         for (int i=0; i<n; i++){
             arr[i]= sc.nextInt();
         }
-        array(arr,n);
+        selection_sort a1 =new selection_sort();
+        a1.array(arr,n);
     }
 }

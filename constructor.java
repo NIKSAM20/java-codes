@@ -1,4 +1,3 @@
-import java.util.*;
 class employee{
     int id;
     String name;
@@ -12,13 +11,11 @@ class employee{
     public void setid(int i){ id=i; }
     public int getid(){ return id; }
 }
-
 public class constructor {
     public static void main(String args[]){
         employee nikhil= new employee();
 
         System.out.println(nikhil.getid());
         System.out.println(nikhil.getname());
-    }
-    
+    }   
 }
