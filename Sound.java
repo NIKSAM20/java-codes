@@ -1,24 +1,28 @@
-abstract class Animal {
-    // Abstract method (does not have a body)
-    public abstract void animalSound();
-    // Regular method
-    public void sleep() {
-      System.out.println("Zzz");
+class Animal {
+    public void animalSound() {
+      System.out.println("The animal makes a sound");
     }
   }
   
-  // Subclass (inherit from Animal)
   class Pig extends Animal {
     public void animalSound() {
-      // The body of animalSound() is provided here
       System.out.println("The pig says: wee wee");
+    }
+  }
+  
+  class Dog extends Animal {
+    public void animalSound() {
+      System.out.println("The dog says: bow wow");
     }
   }
   
   class Sound {
     public static void main(String[] args) {
-      Pig myPig = new Pig(); // Create a Pig object
+      Animal myAnimal = new Animal();  // Create a Animal object
+      Animal myPig = new Pig();  // Create a Pig object
+      Animal myDog = new Dog();  // Create a Dog object
+      myAnimal.animalSound();
       myPig.animalSound();
-      myPig.sleep();
+      myDog.animalSound();
     }
   }
